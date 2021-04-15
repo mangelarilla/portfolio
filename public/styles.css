@@ -1,7 +1,30 @@
-html, body, main {
-	box-sizing: border-box;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-	-webkit-overflow-scrolling: touch;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Oxygen&display=swap');
+
+body {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 20vh 1fr 2fr;
+	font-family: 'Fira Sans', sans-serif;
+	grid-gap: 1rem;
+}
+
+header {
+	grid-column: 1 / span 2;
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+}
+
+#experience {
+	grid-column: 2;
+	grid-row: 2 / span 2;
+}
+
+#skills {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#education {
+	grid-column: 1;
+	grid-row: 3;
 }
